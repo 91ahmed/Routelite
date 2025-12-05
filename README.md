@@ -1,4 +1,3 @@
-````markdown
 # Routelite
 
 Routelite is a lightweight **PHP** routing library for building flexible and maintainable web applications.  
