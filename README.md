@@ -116,7 +116,8 @@ $route->setLanguage(['ar', 'en']);
 $route->remove('Unwanted Word');
 ```
 
-* Removes specified text from the URL before processing.
+* The `remove()` method allows you to filter out specific parts of the URL before route processing.  
+This is especially useful in development environments, like when working on `localhost`, where your project might be inside a subfolder.
 
 ---
 
@@ -169,8 +170,6 @@ $route->notFound(function () {
 use Router\Routelite;
 
 $route = Routelite::collect();
-
-$route->remove('Unwanted Word');
 
 $route->middlewareGlobal(['session']);
 
