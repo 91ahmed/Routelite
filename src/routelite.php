@@ -205,15 +205,15 @@
 
 		private function call (string $controller, string $action, array $params = [])
 		{
-		    if (!preg_match('/^[a-zA-Z0-9_]+$/', $controller) || !preg_match('/^[a-zA-Z0-9_]+$/', $action)) {
-		        throw new \Exception("Invalid Controller or Action Name");
-		    }
+		    // if (!preg_match('/^[a-zA-Z0-9_]+$/', $controller) || !preg_match('/^[a-zA-Z0-9_]+$/', $action)) {
+		    //     throw new \Exception("Invalid Controller or Action Name");
+		    // }
 
 			if (substr($action, 0, 2) === '__') {
 			    throw new \Exception("Magic methods are not allowed");
 			}
 
-			$controller = '\\App\\Controllers\\'.$controller;
+			//$controller = '\\App\\Controllers\\'.$controller;
 
 			if (!class_exists($controller)) {
 				throw new \Exception("Controller Not Found ({$controller})", 1);
