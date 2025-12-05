@@ -3,6 +3,7 @@
     "description": "A lightweight PHP routing library",
     "type": "library",
     "license": "MIT",
+    "version": "1.0",
     "autoload": {
         "psr-4": {
             "Router\\": "src/"
