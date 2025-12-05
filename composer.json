@@ -1,0 +1,21 @@
+{
+    "name": "ahmed/routelite",
+    "description": "A lightweight PHP routing library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Router\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "91ahmed",
+            "email": "ahmedh12491@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "minimum-stability": "stable"
+}
