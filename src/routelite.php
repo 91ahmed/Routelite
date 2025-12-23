@@ -94,6 +94,7 @@
 
 			if (!in_array($lang, $languages)) {
 				array_push($this->errors, "Undefined url language: ({$lang})");
+				$this->language = $languages[0].'/';
 			} else {
 				$this->language = $lang.'/';
 			}
